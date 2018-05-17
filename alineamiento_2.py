@@ -146,8 +146,8 @@ def consultarEdicion(read,genoma,size_k_mero,k):
 
 # path del fichero que contiene el genoma y los reads
 
-ficheroGenoma= "phix.fa"
-ficheroFastq = "reads_phix_1.fastq"
+ficheroGenoma= input("Ingrese el fichero que contiene el genoma: ")
+ficheroFastq = input("Ingrese el fichero que contiene los read: ")
 k=2 #nro de ediciones permitidas
 
 print("Leyendo fichero del genoma...")
@@ -198,13 +198,7 @@ with open("genoma22.fasta","w") as f:
 		print(genoma_ind[inicio:inicio+70],file=f)
 		inicio=inicio+70
 
-#conocer las diferencias
-c=0
-for i in range(len(genoma)):
-	if(genoma_ind[i:i+1] != genoma[i:i+1]):
-		c=c+1
-		
-print(c)
+
 
 
 
