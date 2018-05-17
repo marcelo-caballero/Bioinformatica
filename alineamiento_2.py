@@ -190,8 +190,8 @@ for i in sorted(read_alineados.keys()):
 			
 			
 print("Escribiendo fichero...")		
-with open("genoma22.fasta","w") as f:
-	print(">gi",file=f)
+with open("genoma.fasta","w") as f:
+	print(">Secuenciacion de genoma",file=f)
 	inicio = 0
 	fin= len(genoma_ind)
 	while(inicio < fin):
